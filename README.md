@@ -51,28 +51,28 @@ The server will be running at `http://localhost:4000`.
   }
 
 #### Get All Books
-Endpoint: GET /api/v1/getAllBooks
-Description: Retrieves all books from the system.
-Response: 200 OK
-```json
+- Endpoint: GET /api/v1/getAllBooks
+- Description: Retrieves all books from the system.
+- Response: 200 OK
+  ```json
 {
     "books": [...],
 }
 
 #### Get Book by ID
-Endpoint: GET /api/v1/getBook/:id
-Description: Retrieves a book by its ID.
-Response: 200 OK
-```json 
+- Endpoint: GET /api/v1/getBook/:id
+- Description: Retrieves a book by its ID.
+- Response: 200 OK
+  ```json 
 {
     "book": {...}
 }
 
 #### Update Book by ID
-Endpoint: PUT /api/v1/updateBook/:id
-Description: Updates a book by its ID.
-Request Body:
-```json
+- Endpoint: PUT /api/v1/updateBook/:id
+- Description: Updates a book by its ID.
+- Request Body:
+  ```json
 {
     "title": "Updated Title",
     "author": "Updated Author",
@@ -82,25 +82,25 @@ Request Body:
 Response: 200 OK
 
 #### Delete Book by ID
-Endpoint: DELETE /api/v1/deleteBook/:id
-Description: Deletes a book by its ID.
-Response: 201 Created
+- Endpoint: DELETE /api/v1/deleteBook/:id
+- Description: Deletes a book by its ID.
+- Response: 201 Created
 
 #### Get Books by Author
-Endpoint: GET /api/v1/books/author/:author
-Description: Retrieves books by the specified author.
+- Endpoint: GET /api/v1/books/author/:author
+- Description: Retrieves books by the specified author.
 Response: 200 OK
 
-```json
+  ```json
 {
     "books": [...]
 }
 
 #### Get Books by Publication Year
-Endpoint: GET /api/v1/books/published/:year
-Description: Retrieves books published in the specified year.
-Response: 200 OK
-```json
+- Endpoint: GET /api/v1/books/published/:year
+- Description: Retrieves books published in the specified year.
+  Response: 200 OK
+  ```json
 {
     "books": [...]
 }
@@ -110,10 +110,10 @@ Response: 200 OK
 ## User Routes
 
 #### Add a User
-Endpoint: POST /api/user/addUser
-Description: Registers a new user.
-Request Body:
-```json
+- Endpoint: POST /api/user/addUser
+- Description: Registers a new user.
+- Request Body:
+  ```json
 {
     "email": "user@example.com",
     "password": "password123"
@@ -121,9 +121,10 @@ Request Body:
 Response: 200 OK
 
 #### User Login
-Endpoint: GET /api/user/login
-Description: Authenticates a user.
-Request Body:
+- Endpoint: GET /api/user/login
+- Description: Authenticates a user.
+- Request Body:
+  ```json
 {
     "email": "user@example.com",
     "password": "password123"
